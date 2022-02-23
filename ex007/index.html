@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Criamos um style para marcação de texto, criando um padão para dentro das tags-->    
+<style> 
+        mark{
+            background-color: rgb(9, 246, 9);
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito /destaque</h2>
+    <!--Formatação para negritro fazendo uso da tag b porém a tag b cairá em desuso pois vem do html 4, ja não há sentido em usa-lá.
+    O mais correto é usando o strong-->
+    <p>Nesta frase temos um <b> termo em negrito </b> usando a tag B (não semântica) </p>
+    <p>Nesta frase, temos um <strong> termo em destaque </strong> usando a tag STRONG (SEMÂNTICA) SIG => FORTE </p>
+   
+    <h2>
+        Itálico / Ênfase 
+    </h2>
+    <!--Dar ênfase há uma trexo da frase, fazendo uso da tab i, tornando-a itálico, não tem mais sentido, o correto agora é fazer um da <em>-->
+        <p>Nesta frasem temos <i>um termo em itálico</i>, usando a tai I (não semântica)</p>
+   
+        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+
+        <h2>Texto marcado </h2>
+        <!--O marck serve para fazer marcações em textos, há cima no style criamos um CSS basico para marcação de textos-->
+        <p>Podemos criar um <mark> texto marcado</mark> com a tag MARC. </p>
+        <p>E no outro parágrafo outro <mark>texto marcado</mark>  no final </p>
+
+        <h2>Texto grande e texto pequeno</h2>
+        <!--A teg BIG caiu em desuso pois não há sentido tela quando existir necessidade da mesma é melhor fazer a formatação em CSS
+        Já a tag SMALL que siguinifica pequena, faz sentido mantela devido em contratos temos o uso constante em letras pequenas.-->
+        <p>Estamos criando um texto com <big>letras grandes</big> e <small>letras pequenas</small> neste memos paragrafo</p>
+
+        <h2>Texto Inserido</h2>
+
+        <!--Para sublinhar um texto ou para inidicar que ele foi inserido fazemos um uso da tag INS-->
+        <p>Podemos marcar um <ins>texto como inserido</ins>, para dar uma ênfase e indicar que ele foi inserido depois</p>
+
+        <!--A tag DEL marcará o texto teridado -->
+        <p>Podemos efetuar a marcação de um texto <DEL>retirado</DEL> com a tag DEL veja o ex: </p>
+
+        <p>Existe também o texto <u>sublinhado</u> com a tag U (não semântica)</p>
+
+        <h2>Texto sobrescrito</h2>
+        <!--A tag SUP vai deixar o campo selecionado superiro ao restante -->
+        <p>Para coisas do tipo x<sup>2</sup>+3</p>
+
+        <h2>Texto subescrito</h2>
+        <!--A tag sub vai deixar o texto selecionado inferiror ao restante do texto-->
+        <p>Para escrevemos coisas do tipo H<sub>2</sub>O</p>
+
+</body>
+</html>

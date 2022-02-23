@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+   
+    <style>
+             /*
+                #  = id
+                . = class
+                : = pseudo-class
+                :: = pseudo-element
+                >  = clildren
+             */
+    
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: red;
+        }
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial{
+            background-color: rgb(178, 229, 245);
+        }
+        .especial::after{
+            content: '←';
+        }
+        .especial::before{
+            content: '→ €';
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Personalizando link
+        <ul>
+            <li><a href="https://github.com/Fernandolilo" target="blank" class="especial">Repósitorio do GitHub</a></li>
+            <li><a href= "https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="blank">linkdin</a></li>
+            <li><a href="https://pt-br.facebook.com/login/" target="blank">Face</a></li>
+        </ul>
+    </h1>
+</body>
+</html>

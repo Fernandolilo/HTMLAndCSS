@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto HTML</title>
+</head>
+<body>
+    <h1>Outras formatação</h1>
+    <hr>
+    <h2>Código fonte</h2>
+    <p> 
+        <!--A tag code serve para dar destaque, deixando todas as letras em um mesmo espaço, facilitando assim a leitura.-->
+        O comando <code>document.getElementById</code> é escrito
+        em linguagem javaScript.
+    </p>
+    <h2>Código</h2>
+    <!--A tag pre serve para formatar a escrita deixando na formatação de um cod, dentro da teg pre é necessário por o code para facilitar a leitura.-->
+    <pre>
+        <code>
+    num =int(input('Digite um numero: '))
+    if num % 2 == 0:
+        print(f'O numero {num} é PAR')
+    else:
+        print(f'O número {num} é IMPAR ')
+    print(f'Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <!--A tag <q> serve para fazer citções-->
+    <p>Como diaria o pai de um amigo o <q>computador é um burro muito rápido</q></p>
+    <h2>
+        Citações completas
+    </h2>
+    <p >
+        <!--Para fazer um citação apontando a origem do estudo por ex: pode ser feito o uso da tag <blockquote> depois cite='dentro das aspas o,link de referencia'-->
+        <blockquote cite='https://github.com/fernandolilo/curso-udemy-Ecommerc'>
+            <q style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: blue;">Meu curso de spring boot</q>
+        </blockquote>
+    </p>
+    <h2>
+        Abreviações
+    </h2>
+    <!--Para fazer uma abreviação pode ser feito o uso da tag <abbr>  dentro do tittle pode ser colocado a citação completa -->
+    <p>Estou estudadno <abbr title="HyperText Markup Laguage">HTML</abbr> e <abbr title="Cascade Style sheets">CSS</abbr></p>
+</body>
+</html>

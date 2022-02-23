@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body{
+        background-color:rgb(172, 169, 169);
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+    }
+    header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    nav {
+        background-color: rgb(28, 29, 29);
+        padding: 4px;
+        box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493);
+    }
+    nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right:  30px;
+    }
+    nav > a:hover {
+        text-decoration: underline;
+    }
+    main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 12px 0px ;
+    }
+    article {
+        background-color: rgb(168, 168, 168);
+        padding: 5px;
+    }
+    article > aside{
+        background-color: rgb(59, 59, 59);
+    }
+    footer{
+        background-color: rgb(30, 30, 31);
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+    }
+    footer > p {
+        margin: 0px;
+    }
+
+    div#bola{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+</style>
+
+<!--! forma semantica de criar conteudos  -->
+<!--!  <header> é o cabeçalho do contedudo -->
+<body>
+    
+    <header>        
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+           
+        </nav>
+    </header>
+    
+    <main>
+        <section id="Assuntons"></section>
+        <section id="Noticias">
+           <article>
+            <h2>Noticias sobre Brasil</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, accusantium nihil neque deleniti ullam sequi error. Provident quidem magni maiores. Nam inventore necessitatibus excepturi esse nulla non, quasi nesciunt aperiam!</p>
+            <aside>
+                <p>Artifo escrito por Fernando Silva</p>
+            </aside>
+           </article>
+        </section>
+    </main>
+   
+    <footer>
+        <p>Developement Fernando Silva</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>

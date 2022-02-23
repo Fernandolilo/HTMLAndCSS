@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video em HTM5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor! </p>
+
+    <!--A tag poster server para fazer um capa aterior ao video.... ou áudio.
+    a teg source serve para criar um tratamento  if e else, type é tipo de video e ouu outra coisa-->
+    <video width="500" poster="imagens/imagempequena1.png"  controls autoplay loop>
+        <source src="videos/mediaqualiade.webm" type="videos/webm">
+
+        <source src="videos/original.mp4" type="video/mp4">
+
+        <source src="videos/medioogv.ogv" type="video/ogv">
+
+        <source src="videos/altaqualidade.webm" type="video/webm">
+    </video>
+
+    <!--desta forma geramos videos do YouTube, desta forma mascará o link, isto é pego no YouTobe-->
+    <h1>Inserindo vídios no YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xj-osdBe3TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídios no YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Xj-osdBe3TE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>
